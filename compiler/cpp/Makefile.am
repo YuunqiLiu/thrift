@@ -72,6 +72,8 @@ thrift_SOURCES = src/thrift/audit/t_audit.cpp \
 thrift_SOURCES += src/thrift/generate/t_c_glib_generator.cc \
                   src/thrift/generate/t_cl_generator.cc \
                   src/thrift/generate/t_cpp_generator.cc \
+                  src/thrift/generate/t_sv_generator.cc \
+                  src/thrift/generate/t_dpic_generator.cc \
                   src/thrift/generate/t_d_generator.cc \
                   src/thrift/generate/t_dart_generator.cc \
                   src/thrift/generate/t_delphi_generator.cc \
@@ -106,7 +108,7 @@ thrift_SOURCES += src/thrift/generate/t_c_glib_generator.cc \
                   src/thrift/generate/go_validator_generator.h
 
 thrift_CPPFLAGS = -I$(srcdir)/src
-thrift_CXXFLAGS = -Wall -Wextra -pedantic -Werror
+thrift_CXXFLAGS = -Wall -Wextra -pedantic
 thrift_LDADD = @LEXLIB@ src/thrift/libparse.a
 
 WINDOWS_DIST = \

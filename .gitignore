@@ -454,3 +454,16 @@ compiler/cpp/tests/*.cmake
 compiler/cpp/tests/Testing/
 compiler/cpp/tests/bin/
 compiler/cpp/tests/*.a
+
+
+
+
+
+# vcs output
+demo/csrc
+demo/simv*
+demo/gen*
+demo/*.so
+demo/*.json
+demo/ucli.key
+demo/vc_hdrs.h
